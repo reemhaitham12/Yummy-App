@@ -76,17 +76,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*? card col-lg-3 */
 .card .titleCategory {
     background-color: rgba(255, 255, 255, 0.5);
@@ -107,6 +96,7 @@ body {
 .card:hover .titleCategory {
     transform: translateY(0);
 }
+
 .card {
     cursor: pointer;
     background-color: #000000;
@@ -136,29 +126,57 @@ body {
     margin: 10px;
     position: absolute;
     left: 0;
-    bottom: 140px;
+    bottom: 155px;
     text-align: center;
 }
+
+/* ? end card col-lg-3 */
+
 
 /* ? search box */
 .searchbox .col-lg-6 input, .searchbox .col-lg-6 input::placeholder {
     color: #fff;
+}
+/* ? end search box */
 
+/* ! start Area Home */
+.home{
+    border-radius: 6px;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+}
+.home i{
+    color: #fff;
+    display: inline-block;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    text-align: center;
 }
 
 
+/* ! end Area Home */
 
-/* @media only screen and (max-width: 500px) {
-
-    
-    .card .title h3 {
-        margin: 10px;
-        position: absolute;
-        left: 0;
-        bottom: 200px;
-        text-align: center;
-    }
-} */
+/* ! start Ingredients */
+.cards{
+    border-radius: 6px;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+}
+.cards i{
+    color: #fff;
+    display: inline-block;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    text-align: center;
+}
+.cards p{
+    font-family:  "Assistant", sans-serif;
+    line-height: 24px;
+}
 
 
 
@@ -236,18 +254,17 @@ body {
         max-width: 400px;
     }
 
-    .card .title h3 {
+    /* .card .title h3 {
         /* margin: 10px;
         position: absolute;
         left: 170px;
         bottom: 180px;
         text-align: center; */
-        text-align: center;
+    /* text-align: center;
         margin-inline: 170px;
-        margin-block: 40px;
-    }
+        margin-block: 40px; */
 
     .searchbox .container {
-        padding-left: 80px;
+        padding-left: 40px;
     }
 }

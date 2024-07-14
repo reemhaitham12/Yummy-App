@@ -28,8 +28,8 @@
                 <ul class="text-capitalize list-unstyled">
                     <li onclick="ShowSearch()">Search</li>
                     <li onclick="Category()">categories</li>
-                    <li>area</li>
-                    <li>ingredients</li>
+                    <li onclick="Area()">area</li>
+                    <li onclick="Ingredients()">ingredients</li>
                     <li>contact us</li>
                 </ul>
             </div>
@@ -61,7 +61,22 @@
     </div>
     <div class="listCategory">
         <div class="container py-5">
-            <div class="row g-3" id="Row">
+            <div class="searchbox">
+                <div class="container d-none" id="searchBox">
+                    <!-- <div class="row g-3">
+                        <div class="col-lg-6">
+                            <input class="form-control me-2 w-100 bg-transparent "
+                                type="search" placeholder="Search By Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input class="form-control me-2 w-100 bg-transparent"
+                                type="search" placeholder="Search By First Letter"
+                                maxlength="1">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row g-3 py-4" id="Row">
                 <!-- <div class="col-lg-3">
                     <div
                         class="card position-relative overflow-hidden rounded-3">
@@ -94,35 +109,22 @@
                         </div>
                     </div>
                 </div> -->
+                <!-- <div class="col-lg-3">
+                    <div class="home">
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <h3>Egypt</h3>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3">
+                    <div class="cards">
+                        <i class="fa-solid fa-drumstick-bite"></i>
+                        <h3 class="text-capitalize">chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore minus hic ipsa sapiente, dolores iure aliquid et veniam, deleniti magni vero quisquam voluptatem nam.</p>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
-    <div class="searchbox">
-        <div class="container" id="searchBox">
-            <!-- <div class="row g-3">
-                <div class="col-lg-6">
-                    <input class="form-control me-2 w-100 bg-transparent "
-                        type="search" placeholder="Search By Name">
-                </div>
-                <div class="col-lg-6">
-                    <input class="form-control me-2 w-100 bg-transparent"
-                        type="search" placeholder="Search By First Letter"
-                        maxlength="1">
-                </div>
-            </div> -->
-        </div>
-    </div>
-    <!-- <div class=" d-flex justify-content-center align-items-center" >
-        <div class="search-box text-center">
-            <h1>Search Page</h1>
-            <div class="d-flex flex-column align-items-center mt-3" role="search">
-                <div class="groupInput my-2">
-                    <input class="form-control mb-2 " type="search" placeholder="Search By Name">
-                    <input class="form-control mb-2 " type="search" placeholder="Search By First Letter">
-                </div>
-            </div>
-        </div>
-    </div> -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
