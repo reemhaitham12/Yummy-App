@@ -26,8 +26,8 @@
         <div class="Allnavbar flex-column text-white p-4">
             <div class="links">
                 <ul class="text-capitalize list-unstyled">
-                    <li>Search</li>
-                    <li>categories</li>
+                    <li onclick="ShowSearch()">Search</li>
+                    <li onclick="Category()">categories</li>
                     <li>area</li>
                     <li>ingredients</li>
                     <li>contact us</li>
@@ -47,18 +47,22 @@
             </div>
         </div>
     </div>
-    <div class="navout bg-white py-4 px-2 text-black d-flex justify-content-between">
+    <div
+        class="navout bg-white py-4 px-2 text-black d-flex justify-content-between">
         <img src="./image/logo.png" alt="">
-        <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i> <!--data-label-id="0" data-metatip="true"-->
+        <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+        <!--data-label-id="0" data-metatip="true"-->
         <div>
-            <i class="fa-solid fa-globe d-block"></i> <!--data-label-id="0" data-metatip="true"  -->
-        <i class="fa-solid fa-share-nodes"></i><!--data-label-id="0" data-metatip="true"  -->
+            <i class="fa-solid fa-globe d-block"></i>
+            <!--data-label-id="0" data-metatip="true"  -->
+            <i
+                class="fa-solid fa-share-nodes"></i><!--data-label-id="0" data-metatip="true"  -->
         </div>
     </div>
     <div class="listCategory">
         <div class="container py-5">
             <div class="row g-3" id="Row">
-                <div class="col-lg-3">
+                <!-- <div class="col-lg-3">
                     <div
                         class="card position-relative overflow-hidden rounded-3">
                         <div class="image">
@@ -69,23 +73,45 @@
                             <h3 class="text-capitalize">sushi</h3>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <!-- <div class="col-lg-3">
+                    <div
+                        class="card position-relative overflow-hidden rounded-3">
+                        <div class="image">
+                            <img src="./image/sick.jpg" alt=""
+                                class="w-100 d-block">
+                        </div>
+                        <div class="titleCategory">
+                            <h3 class="text-center mt-5 p-2">reem</h3>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Saepe voluptas amet iusto
+                                    sint obcaecati! Autem perferendis ipsum
+                                    aliquam ad soluta hic accusamus dignissimos
+                                    dicta necessitatibus!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
-
-
-
-    <!-- <div class="d-flex justify-content-center align-items-center d-none">
-        <div class="searchbox">
-            <div class="d-flex mt-3" role="search">
-                <input class="form-control me-2 w-100" type="search"
-                    placeholder="Search By Name">
-                <input class="form-control me-2 w-100" type="search"
-                    placeholder="Search By First Letter">
-            </div>
+    <div class="searchbox">
+        <div class="container" id="searchBox">
+            <!-- <div class="row g-3">
+                <div class="col-lg-6">
+                    <input class="form-control me-2 w-100 bg-transparent "
+                        type="search" placeholder="Search By Name">
+                </div>
+                <div class="col-lg-6">
+                    <input class="form-control me-2 w-100 bg-transparent"
+                        type="search" placeholder="Search By First Letter"
+                        maxlength="1">
+                </div>
+            </div> -->
         </div>
-    </div> -->
+    </div>
     <!-- <div class=" d-flex justify-content-center align-items-center" >
         <div class="search-box text-center">
             <h1>Search Page</h1>

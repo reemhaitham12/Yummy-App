@@ -88,9 +88,30 @@ body {
 
 
 /*? card col-lg-3 */
-.card{
-    cursor: pointer;
+.card .titleCategory {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    position: absolute;
+    /* bottom:140px;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    padding-block: 20px;
+    padding-inline: 20px;
+    transform: translateY(100%);
+    transition: transform 1s;
+
 }
+
+.card:hover .titleCategory {
+    transform: translateY(0);
+}
+.card {
+    cursor: pointer;
+    background-color: #000000;
+}
+
 .card .title {
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
@@ -118,6 +139,13 @@ body {
     bottom: 140px;
     text-align: center;
 }
+
+/* ? search box */
+.searchbox .col-lg-6 input, .searchbox .col-lg-6 input::placeholder {
+    color: #fff;
+
+}
+
 
 
 /* @media only screen and (max-width: 500px) {
@@ -192,34 +220,22 @@ body {
         box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
     }
 }
+
 /* ? end loading */
 
 /* ? responsive  */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     /* Styles */
-    .listCategory .container{
+    .listCategory .container {
         padding-left: 80px;
     }
+
     .card {
         max-width: 400px;
     }
-    .card .title {
-        background-color: rgba(255, 255, 255, 0.5);
-        text-align: center;
-        position: absolute;
-        /* bottom:140px;
-        top: 0;
-        left: 0; */
-        width: 100%;
-        height: 100%;
-        padding-block: 20px;
-        padding-inline: 20px;
-        transform: translateY(100%);
-        transition: transform 1s;
-    
-    }
+
     .card .title h3 {
         /* margin: 10px;
         position: absolute;
@@ -229,5 +245,9 @@ body {
         text-align: center;
         margin-inline: 170px;
         margin-block: 40px;
+    }
+
+    .searchbox .container {
+        padding-left: 80px;
     }
 }
