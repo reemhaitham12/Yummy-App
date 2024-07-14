@@ -137,16 +137,19 @@ body {
 .searchbox .col-lg-6 input, .searchbox .col-lg-6 input::placeholder {
     color: #fff;
 }
+
 /* ? end search box */
 
 /* ! start Area Home */
-.home{
+.home {
     border-radius: 6px;
     color: #fff;
     line-height: 24px;
     text-align: center;
+    cursor: pointer;
 }
-.home i{
+
+.home i {
     color: #fff;
     display: inline-block;
     font-size: 64px;
@@ -159,13 +162,14 @@ body {
 /* ! end Area Home */
 
 /* ! start Ingredients */
-.cards{
+.cards {
     border-radius: 6px;
     color: #fff;
     line-height: 24px;
     text-align: center;
 }
-.cards i{
+
+.cards i {
     color: #fff;
     display: inline-block;
     font-size: 64px;
@@ -173,10 +177,26 @@ body {
     line-height: 64px;
     text-align: center;
 }
-.cards p{
-    font-family:  "Assistant", sans-serif;
+
+.cards p {
+    font-family: "Assistant", sans-serif;
     line-height: 24px;
 }
+
+.details {
+    border-radius: 16px;
+    color: #fff;
+    text-align: start;
+    line-height: 24px;
+}
+
+.details img {
+    border-radius: 8px;
+    color: #fff;
+    display: inline;
+    line-height: 24px;
+}
+
 
 
 
@@ -250,7 +270,7 @@ body {
         padding-left: 80px;
     }
 
-    .card {
+    .card{
         max-width: 400px;
     }
 
@@ -264,7 +284,8 @@ body {
         margin-inline: 170px;
         margin-block: 40px; */
 
-    .searchbox .container {
-        padding-left: 40px;
+    .searchbox .container{
+        padding-left: 0px;
+        /* 40px */
     }
 }
