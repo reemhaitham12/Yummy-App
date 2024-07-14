@@ -22,6 +22,9 @@
     <title>Yummy</title>
 </head>
 <body>
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>    
     <div class="navbar">
         <div class="Allnavbar flex-column text-white p-4">
             <div class="links">
@@ -49,7 +52,7 @@
     </div>
     <div
         class="navout bg-white py-4 px-2 text-black d-flex justify-content-between">
-        <img src="./image/logo.png" alt="">
+        <img src="./image/logo.png" alt="" onclick="getRandomMeals(20)">
         <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
         <!--data-label-id="0" data-metatip="true"-->
         <div>
@@ -74,7 +77,10 @@
                                 maxlength="1">
                         </div>
                     </div> -->
-                </div>
+                </div> 
+            </div>
+            <div class="Sppiner d-none">
+                <span class="loader"></span>
             </div>
             <div class="row g-3 py-4 d-none" id="Row">
                 <!-- <div class="col-lg-3">
