@@ -239,30 +239,27 @@ async function FilterCategory(Category) {
 }
 
 // ? ---------------------------------------- ?//
-
-// ! Start Area
 async function Area() {
     CloseNavbar();
     Row.classList.add('d-none');
-    // ! loading
     loadering.classList.remove('d-none');
     searchBox.classList.add('d-none');
-    const responseApi = await fetch(`https://www.themealdb.com/api/json/v1/1/list.php?a=list`);
-    const response = await responseApi.json();
+    let responseApi = await fetch(`https://www.themealdb.com/api/json/v1/1/list.php?a=list`);
+    let response = await responseApi.json();
     ShowArea(response.meals);
-    // ! loading
     loadering.classList.add('d-none');
 }
+
 // ! end Area
 
-// ! start ShowArea
+// ! start Show Area
 function ShowArea(card) {
     Row.classList.remove('d-none');
     let cartona = ``
     for (let i = 0; i < card.length; i++) {
         cartona += `
         <div class="col-lg-3">
-                    <div class="home" onclick="FilterArea('${card[i].strArea}')")>
+                    <div class="home" onclick="FilterArea('${card[i].strArea}')">
                         <i class="fa-solid fa-house-laptop"></i>
                         <h3>${card[i].strArea}</h3>
                     </div>
@@ -271,17 +268,20 @@ function ShowArea(card) {
     }
     Row.innerHTML = cartona;
 }
-// ! end ShowArea
+
+// ! end Show Area
 
 // ! Filter by Area
 async function FilterArea(Area) {
     Row.classList.add("d-none");
+    //  ! loading
     loadering.classList.remove('d-none');
     const responseApi = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${Area}`);
     const response = await responseApi.json();
-    ShowFood(response.meals[0]);
+    ShowFood(response.meals);
     loadering.classList.add('d-none');
 }
+
 // ? ---------------------------------------- ?//
 
 // ! start Ingredients
@@ -481,7 +481,7 @@ function ShowContact() {
     loadering.classList.add('d-none');
     const AllInput = document.querySelectorAll(".form-control");
     AllInput.forEach(input => {
-        input.addEventListener('input', function() {
+        input.addEventListener('input', function () {
             validateForm(AllInput);
         });
     });
@@ -527,7 +527,7 @@ function validateForm(inputs) {
     return isValid;
 }
 
-function  BtnSubmit() {
+function BtnSubmit() {
     const formData = {};
     const inputs = document.querySelectorAll(".form-control");
     inputs.forEach(input => {
