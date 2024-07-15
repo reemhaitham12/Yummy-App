@@ -24,7 +24,7 @@
 <body>
     <div class="loading d-none">
         <span class="loader"></span>
-    </div>    
+    </div>
     <div class="navbar">
         <div class="Allnavbar flex-column text-white p-4">
             <div class="links">
@@ -33,7 +33,7 @@
                     <li onclick="Category()">categories</li>
                     <li onclick="Area()">area</li>
                     <li onclick="Ingredients()">ingredients</li>
-                    <li>contact us</li>
+                    <li onclick="ShowContact()">contact us</li>
                 </ul>
             </div>
             <div class="navbarIcons">
@@ -77,12 +77,12 @@
                                 maxlength="1">
                         </div>
                     </div> -->
-                </div> 
+                </div>
             </div>
             <div class="Sppiner d-none">
                 <span class="loader"></span>
             </div>
-            <div class="row g-3 py-4 d-none" id="Row">
+            <div class="row g-3 py-4 " id="Row">
                 <!-- <div class="col-lg-3">
                     <div
                         class="card position-relative overflow-hidden rounded-3">
@@ -188,8 +188,84 @@
                         </div>
                     </div>
                 </div> -->
+                <!-- <div class="contact">
+                    <div class="row g-3">
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Enter Your Name">
+                            </div>
+                            <ul class="alert alert-danger p-0 invalid-feedback">
+                                <li>First Name Is Required</li>
+                                <li>Minmum Length 2 and Maxmum 20</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Enter Your phone">
+                                <ul
+                                    class="alert alert-danger p-0 invalid-feedback">
+                                    <li>Age Is Required</li>
+                                    <li>Already 11 numbers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control"
+                                    placeholder="Enter Your Password">
+                                <ul
+                                    class="alert alert-danger p-0 invalid-feedback">
+                                    <li>Password Is Required</li>
+                                    <li>Minimum eight characters, at least one
+                                        letter and one number</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Enter Your Email">
+                                <ul
+                                    class="alert alert-danger p-0 invalid-feedback">
+                                    <li>Email Is Required</li>
+                                    <li>InValid Email Formate</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Enter Your Age">
+                                <ul
+                                    class="alert alert-danger p-0 invalid-feedback">
+                                    <li>Age Is Required</li>
+                                    <li>Minimum 10 Max 80</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control"
+                                    placeholder="Repassword">
+                                <ul
+                                    class="alert alert-danger p-0 invalid-feedback">
+                                    <li>Password Is Required</li>
+                                    <li>Minimum eight characters, at least one
+                                        letter and one number</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn btn-outline-danger" id="submitBtn"
+                            disabled>Submit</button>
+                    </div>
+                </div> -->
             </div>
         </div>
+    </div>
     </div>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

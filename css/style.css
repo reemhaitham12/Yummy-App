@@ -233,6 +233,10 @@ body {
 }
 
 
+/* button */
+button{
+    text-align: center;
+}
 
 
 /*? loading */
